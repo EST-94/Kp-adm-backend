@@ -17,4 +17,9 @@ type Author {
     lastName: String
 }
 
+type Admin {
+    uid : ID
+    userName : String
+}
+
 # example ends

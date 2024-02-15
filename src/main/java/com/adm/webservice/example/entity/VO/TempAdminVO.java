@@ -17,11 +17,4 @@ public record TempAdminVO(String uid, String userName) {
             new TempAdminVO("AID-0000", "super"),
             new TempAdminVO("AID-0001", "normalUser")
     );
-
-    public static TempAdminVO getByUserName(String userName) {
-        return adminVOList.stream()
-                .filter(tempAdminVO -> tempAdminVO.userName.equals(userName))
-                .findFirst()
-                .orElse(null);
-    }
 }
